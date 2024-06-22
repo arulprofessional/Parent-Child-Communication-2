@@ -16,7 +16,7 @@ export default function Parent() {
   }
 
   return (
-    <div className="card">
+    <div className="card" style={{backgroundColor: dataFromChild}}>
       <h2>Parent</h2>
       <p>{dataFromChild}</p>
       <input type="text" onChange={OnChangeHandler} />

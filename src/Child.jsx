@@ -5,7 +5,7 @@ export default function Child(props) {
     props.onChange(event.target.value);
   }
   return (
-    <div className="card">
+    <div className="card" style={{backgroundColor: props.dataForChild}}>
       <h2>Child</h2>
       <p>{props.dataForChild}</p>
       <input type="text" onChange={onChangeHandler} />
